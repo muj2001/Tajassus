@@ -1,4 +1,5 @@
 *.mp4
 *.png
+!Background.png
 __pycache__
 media

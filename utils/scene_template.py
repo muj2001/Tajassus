@@ -1,10 +1,10 @@
 from manim import *
 import numpy as np
 
-class ClassicalMechanics(Scene):
+class SceneTemplate(Scene):
     def construct(self):
 
-        background = ImageMobject("Background.png") 
+        background = ImageMobject("./important_media/background/Background.png") 
         
         # Scale the image to fit the screen
         background.set_height(config.frame_height)
@@ -24,17 +24,3 @@ class ClassicalMechanics(Scene):
 \appto{\normalsize}{\zerodisplayskips}
 \appto{\small}{\zerodisplayskips}
 \appto{\footnotesize}{\zerodisplayskips} \setmainlanguage{english} \setotherlanguage{urdu} \setmainfont{JameelNooriNastaleeqRegular.ttf}[Path=./fonts/] """)
-        
-class TestScene(Scene):
-    def construct(self):
-        # self.play(Write(Text("Hello, World!")))
-        # self.wait(1)
-        # self.play(FadeOut(Text("Hello, World!")))
-        # self.wait(1)
-        sq = Square(
-            side_length=2, 
-            fill_color=BLUE, 
-            fill_opacity=0.5
-            )
-        self.play(Create(sq), run_time = 3)
-        self.wait()
