@@ -1,0 +1,2 @@
+Run Scene
+	manim <File_Path/Name> <Scene_Class_Name> -pqm
